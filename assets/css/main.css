@@ -1360,3 +1360,46 @@ h6 {
 .email {
   color: red;
 }
+.github-stat {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.github-stat div {
+  position: relative;
+}
+
+.github-stat img {
+  width: 150px;
+}
+.github-stat div .stat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.github-stat div h2 {
+  margin: 0px;
+  font-weight: bold;
+}
+.github-stat div p {
+  margin: 0px;
+  font-size: small;
+  letter-spacing: var(--spacing);
+}
+.code-img {
+  position: absolute;
+  width: 664px;
+  right: 0px;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .code-img {
+    display: block;
+  }
+  .github-stat {
+    justify-content: start;
+  }
+}
