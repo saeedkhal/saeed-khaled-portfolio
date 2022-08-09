@@ -219,3 +219,12 @@ anime
     easing: 'easeOutExpo',
     delay: 1000,
   });
+
+function sendMail() {
+  const subject = document.getElementById('subject').value;
+  const body = document.getElementById('body').value;
+
+  window.open(
+    `mailto:saeedx.saeed99@eng-st.cu.edu.eg?subject=${subject}&body=${body}`
+  );
+}

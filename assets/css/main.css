@@ -993,6 +993,7 @@ h6 {
   height: 100%;
   overflow: hidden;
   z-index: 1;
+  cursor: pointer;
 }
 
 .services .service-item:before {
@@ -1402,4 +1403,13 @@ h6 {
   .github-stat {
     justify-content: start;
   }
+}
+.quta-revers {
+  transform: rotate(180deg) !important;
+  display: inline-block;
+}
+.code:hover,
+.live:hover {
+  border-bottom: 1px solid var(--color-default);
+  cursor: pointer;
 }
