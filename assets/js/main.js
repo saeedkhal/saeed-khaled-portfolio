@@ -198,7 +198,7 @@ anime
     translateX: [
       0,
       document.querySelector('.ml11 .letters').getBoundingClientRect().width +
-        10,
+      10,
     ],
     easing: 'easeOutExpo',
     duration: 700,
