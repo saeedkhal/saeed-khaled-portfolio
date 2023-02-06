@@ -989,13 +989,14 @@ h6 {
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  padding: 50px 30px;
+  padding: 15px 10px;
   transition: all ease-in-out 0.4s;
   background: var(--color-secondary);
   height: 100%;
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
+  width: 100%;
 }
 
 .services .service-item:before {
@@ -1018,16 +1019,19 @@ h6 {
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  margin: auto;
 }
 
-.services .service-item h4 {
+.services .service-item h6 {
   font-weight: 600;
   margin: 15px 0 0 0;
   transition: 0.3s;
   font-size: 20px;
+  font-size: 14px;
+  text-align: center;
 }
 
-.services .service-item h4 a {
+.services .service-item h6 a {
   color: #fff;
 }
 
@@ -1414,4 +1418,7 @@ h6 {
 .live:hover {
   border-bottom: 1px solid var(--color-default);
   cursor: pointer;
+}
+.emil{
+  font-size: 14px;
 }
