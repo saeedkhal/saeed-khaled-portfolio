@@ -997,6 +997,8 @@ h6 {
   z-index: 1;
   cursor: pointer;
   width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .services .service-item:before {
@@ -1029,6 +1031,7 @@ h6 {
   font-size: 20px;
   font-size: 14px;
   text-align: center;
+  align-self: end;
 }
 
 .services .service-item h6 a {
