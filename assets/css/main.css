@@ -1391,6 +1391,7 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
 }
 .github-stat div h2 {
   margin: 0px;
@@ -1439,6 +1440,9 @@ h6 {
   }
   .github-stat img{
     width: 120px;
+  }
+  .gallery-single .portfolio-details-slider img{
+    height: 300px;
   }
   
 }
