@@ -1428,3 +1428,17 @@ h6 {
 .emil{
   font-size: 14px;
 }
+
+@media (max-width:760px){
+
+  .letters{
+    font-size: 14px;
+  }
+  .ml11 .text-wrapper{
+    line-height: 10px;
+  }
+  .github-stat img{
+    width: 120px;
+  }
+  
+}
