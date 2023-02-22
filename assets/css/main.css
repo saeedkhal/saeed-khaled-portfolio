@@ -991,6 +991,7 @@ h6 {
 --------------------------------------------------------------*/
 
 .services .service-item {
+  text-align: center;
   padding: 15px 2px;
   transition: all ease-in-out 0.4s;
   background: var(--color-secondary);
