@@ -170,18 +170,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // my own js
 
-document.addEventListener("DOMContentLoaded", function () {
-  new TypeIt("#letters", {
-    speed: 100,
-    startDelay: 900,
-    loop: true
-  })
-    .type("I Am Saeed", { delay: 3000 })
-    .delete(null)
-    .type("Full Stack Developer", { delay: 2000 })
-    // .delete(null, { speed: 20 })
-    .go();
-});
+new TypeIt("#letters", {
+  speed: 100,
+  startDelay: 900,
+  loop: true
+})
+  .type("I Am Saeed", { delay: 3000 })
+  .delete(null)
+  .type("Full Stack Developer", { delay: 2000 })
+  .go();
 
 function sendMail() {
   const subject = document.getElementById('subject').value;
