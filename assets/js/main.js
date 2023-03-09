@@ -171,11 +171,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // my own js
 
 new TypeIt("#letters", {
-  speed: 100,
   startDelay: 900,
+  speed:150,
   loop: true
 })
-  .type("I Am Saeed", { delay: 3000 })
+  .type("I Am Saeed ", { delay: 3000, })
   .delete(null)
   .type("Full Stack Developer", { delay: 2000 })
   .go();
