@@ -95,12 +95,21 @@
       .catch((error) => {
         hideLoading();
         displayError(thisForm, error);
+        setTimeout(() =>{
+          hideError();
+        },2000)
       });
   }
 
-  function displayError(error) {
-    document.querySelector('.error-message').innerHTML = error;
+  function displayError() {
+    document.querySelector('.error-message').classList.remove('d-none');
     document.querySelector('.error-message').classList.add('d-block');
+  }
+  function hideError(error) {
+    document.querySelector('.error-message').innerHTML = '';
+    document.querySelector('.error-message').classList.remove('d-block');
+    document.querySelector('.error-message').classList.add('d-none');
+
   }
   function displayLoading () {
     document.querySelector('.loading').classList.add('d-block');
@@ -115,7 +124,6 @@
     document.querySelector('.sent-message').classList.remove('d-none');
   }
   function hideMessage () {
-
     document.querySelector('.sent-message').classList.remove('d-block');
     document.querySelector('.sent-message').classList.add('d-none');
   }

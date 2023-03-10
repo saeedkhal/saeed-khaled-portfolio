@@ -1151,17 +1151,25 @@ h6 {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
-  display: none;
+ .error-message {
   color: #fff;
   background: #df1529;
   text-align: left;
   padding: 15px;
   font-weight: 600;
+  display: none;
+  text-align: center;
+  min-width: 200px;
+  position: absolute;
+  transform: translate(-50%);
+  z-index: 10000;
+  left: 50%;
+  top: 70px;
 }
 
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
+.error-message i {
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .sent-message {
