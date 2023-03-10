@@ -175,23 +175,7 @@ new TypeIt("#letters", {
   speed:150,
   loop: true
 })
-  .type("I Am Saeed ", { delay: 3000, })
+  .type("<span style='color:#27a776'>I'm Saeed</span>", { delay: 3000, })
   .delete(null)
-  .type("Full Stack Developer", { delay: 2000 })
+  .type('<span style="color:#27a776">Full Stack Developer</span>' , { delay: 2000 })
   .go();
-
-function sendMail() {
-  
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('name').value;
-  const subject = document.getElementById('subject').value;
-  const body = document.getElementById('body').value;
-  var templateParams = {
-    name,
-    email,
-    subject,
-    body,
-};
- 
-console.log(templateParams)
-}

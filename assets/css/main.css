@@ -336,7 +336,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 60px;
+  height: 60px;
   margin-right: 8px;
 }
 
@@ -365,6 +365,9 @@ h6 {
   #letters{
     font-size: 14px;
     left: 60px !important;
+  }
+  .header .logo img{
+    height: 45px;
   }
 }
 
@@ -1539,4 +1542,10 @@ h6 {
 #letters {
   position: absolute;
   left: 80px;
+  font-weight: 700;
+  font-size:x-large;
+}
+
+.ti-cursor {
+  color: var(--color-primary) !important;
 }
