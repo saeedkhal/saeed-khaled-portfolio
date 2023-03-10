@@ -181,10 +181,17 @@ new TypeIt("#letters", {
   .go();
 
 function sendMail() {
+  
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('name').value;
   const subject = document.getElementById('subject').value;
   const body = document.getElementById('body').value;
-
-  window.open(
-    `mailto:saeedx.saeed99@eng-st.cu.edu.eg?subject=${subject}&body=${body}`
-  );
+  var templateParams = {
+    name,
+    email,
+    subject,
+    body,
+};
+ 
+console.log(templateParams)
 }

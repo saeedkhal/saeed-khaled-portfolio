@@ -38,9 +38,8 @@
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <body>
+  <div class="loading">Sending...</div>
+  <div class="sent-message"> <i class="bi bi-check"></i> Message Sent</div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -98,7 +97,7 @@
     <div class="page-header d-flex align-items-center">
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-6 text-center mt-3">
             <h2>Contact</h2>
             <p>for all inquiries don't hesitate to contact me</p>
 
@@ -146,9 +145,8 @@
         </div>
 
         <div class="row justify-content-center mt-4">
-
           <div class="col-lg-9">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://api.emailjs.com/api/v1.0/email/send" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>

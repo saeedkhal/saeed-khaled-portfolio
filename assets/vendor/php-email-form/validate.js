@@ -17,7 +17,19 @@
       let action = thisForm.getAttribute('action');
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
 
-      let formData = new FormData(thisForm);
+      var formData = {
+
+          service_id:"service_huhwaft",
+          template_id:"template_3joprxm",
+          user_id:"f-9SjXE9tHqkyvmJU",
+          template_params:{
+              name: document.getElementById('name').value,
+              email: document.getElementById('email').value,
+              subject: document.getElementById('subject').value,
+              body: document.getElementById('body').value
+          },
+
+      };
 
       if (recaptcha) {
         if (typeof grecaptcha !== 'undefined') {
@@ -46,10 +58,12 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
+    displayLoading();
+
     fetch(action, {
       method: 'POST',
-      body: formData,
-      headers: { 'X-Requested-With': 'XMLHttpRequest' },
+      body: JSON.stringify(formData) ,
+      headers: {'Content-Type': 'application/json'},
     })
       .then((response) => {
         if (response.ok) {
@@ -61,10 +75,12 @@
         }
       })
       .then((data) => {
-        thisForm.querySelector('.loading').classList.remove('d-block');
         if (data.trim() == 'OK') {
-          thisForm.querySelector('.sent-message').classList.add('d-block');
+          displayMessage()
           thisForm.reset();
+          setTimeout(() =>{
+            hideMessage();
+          },2000)
         } else {
           throw new Error(
             data
@@ -73,15 +89,34 @@
                 action
           );
         }
+      }).finally(() =>{
+        hideLoading();
       })
       .catch((error) => {
+        hideLoading();
         displayError(thisForm, error);
       });
   }
 
-  function displayError(thisForm, error) {
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+  function displayError(error) {
+    document.querySelector('.error-message').innerHTML = error;
+    document.querySelector('.error-message').classList.add('d-block');
+  }
+  function displayLoading () {
+    document.querySelector('.loading').classList.add('d-block');
+    document.querySelector('.loading').classList.remove('d-none');
+  }
+  function hideLoading () {
+    document.querySelector('.loading').classList.remove('d-block');
+    document.querySelector('.loading').classList.add('d-none');
+  }
+  function displayMessage () {
+    document.querySelector('.sent-message').classList.add('d-block');
+    document.querySelector('.sent-message').classList.remove('d-none');
+  }
+  function hideMessage () {
+
+    document.querySelector('.sent-message').classList.remove('d-block');
+    document.querySelector('.sent-message').classList.add('d-none');
   }
 })();
