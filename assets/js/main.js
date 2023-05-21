@@ -177,5 +177,5 @@ new TypeIt("#letters", {
 })
   .type("<span style='color:#27a776'>I'm Saeed</span>", { delay: 3000, })
   .delete(null)
-  .type('<span style="color:#27a776">Full Stack Developer</span>' , { delay: 2000 })
+  .type('<span style="color:#27a776">Web Developer</span>' , { delay: 2000 })
   .go();
