@@ -1549,3 +1549,28 @@ h6 {
 .ti-cursor {
   color: var(--color-primary) !important;
 }
+
+.show-cred{
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 900;
+  box-sizing: border-box;
+  transition: background 0.1s;
+}
+.show-cred:hover{
+  outline: solid rgba(255, 255, 255, 0.6) 1px;
+  background: rgba(255, 255, 255, 0.2) ;
+
+}
+.certification h5:hover{
+  color: var(--color-primary);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.certification p{
+  color: rgba(255, 255, 255, 0.6);
+}
+.certification img{
+  border-radius: 5px;
+}
