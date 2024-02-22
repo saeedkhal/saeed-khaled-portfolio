@@ -1141,10 +1141,10 @@ h6 {
   color: #fff;
 }
 
-/* .contact .info-item:hover i {
+.contact .info-item div:hover ~ i {
   background: var(--color-primary);
   color: #fff;
-} */
+}
 
 .contact .php-email-form {
   width: 100%;
