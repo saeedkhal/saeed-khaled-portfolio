@@ -1141,10 +1141,10 @@ h6 {
   color: #fff;
 }
 
-.contact .info-item:hover i {
+/* .contact .info-item:hover i {
   background: var(--color-primary);
   color: #fff;
-}
+} */
 
 .contact .php-email-form {
   width: 100%;
@@ -1563,10 +1563,13 @@ h6 {
   background: rgba(255, 255, 255, 0.2) ;
 
 }
-.certification h5:hover{
+.certification a:hover{
   color: var(--color-primary);
   cursor: pointer;
   text-decoration: underline;
+}
+.certification h5 a {
+  color: var(--color-default);
 }
 .certification p{
   color: rgba(255, 255, 255, 0.6);
