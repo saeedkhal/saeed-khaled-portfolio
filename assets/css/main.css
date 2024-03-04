@@ -1141,7 +1141,7 @@ h6 {
   color: #fff;
 }
 
-.contact .info-item div:hover ~ i {
+.contact .info-item:hover > i {
   background: var(--color-primary);
   color: #fff;
 }
