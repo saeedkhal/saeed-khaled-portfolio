@@ -377,11 +377,11 @@ h6 {
 
 .header .header-social a {
   color: rgba(255, 255, 255, 0.5);
-  padding-left: 15px;
+  padding-left: 6px;
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .header .header-social a:hover {
@@ -769,7 +769,6 @@ h6 {
   transition: 0.3s;
   height: 100%;
 }
-
 .gallery .gallery-links {
   position: absolute;
   inset: 0;
@@ -790,6 +789,9 @@ h6 {
 
 .gallery .gallery-links .preview-link:hover,
 .gallery .gallery-links .details-link:hover {
+  color: #fff;
+}
+.gallery-item:hover i{
   color: #fff;
 }
 
