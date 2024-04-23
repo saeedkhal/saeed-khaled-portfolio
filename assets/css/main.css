@@ -925,6 +925,10 @@ h6 {
   border-radius: 50px;
   transition: 0.3s;
 }
+.portfolio-info a:not(.btn-visit){
+   text-decoration: underline;
+   text-underline-offset: 3px ;
+}
 
 .gallery-single .portfolio-info .btn-visit:hover {
   background: #2cbc85;
